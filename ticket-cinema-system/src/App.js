@@ -1,17 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './components/navbar';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Cinema System
-        </p>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+          <Navbar />
+        </div>
+    );
 }
 
 export default App;
