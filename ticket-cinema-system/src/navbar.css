@@ -1,0 +1,60 @@
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 70%;
+}
+body{
+    font-size: 1.6rem;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 5rem;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+    width: auto;
+    background: rgb(3, 130, 152);
+}
+.nav__brand{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav__toggler div{
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: rgb(255, 255, 255);
+}
+.nav__toggler{
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .nav__toggler{
+        display: block;
+    }
+    .nav__menu{
+        position: fixed;
+        top: 7vh;
+        right: 0;
+        width: 50%;
+        height: 93vh;
+        background: rgb(3, 130, 152);
+        flex-direction: column;
+        transform: translateX(100%);
+    }
+}
