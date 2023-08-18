@@ -1,9 +1,8 @@
-import React from 'react'
-import '../navbar.css';
+import React from 'react';
 
-function Navbar(props) {
-    return (
-        <nav className='nav'>
+const Navbar = () => {
+  return (
+      <nav className='nav'>
           <a href='#' className='nav__brand'>Cinema System</a>
           <ul className='nav__menu'>
             <li className='nav__item'><a href='#' className='nav__link'>Inicio</a></li>
@@ -14,8 +13,8 @@ function Navbar(props) {
             <div className='line2'></div>
             <div className='line3'></div>
           </div>
-        </nav>
-    );
-}
+      </nav>
+  );
+};
 
 export default Navbar;
